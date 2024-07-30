@@ -253,8 +253,10 @@ _CUTLASS_TYPE_TO_TORCH_TYPE = {
     DataType.f16: "torch::kF16",
     DataType.f32: "torch::kF32",
     DataType.f64: "torch::kF64",
-    DataType.s8: "torch::I8",
-    DataType.s32: "torch::I32",
+    DataType.s8: "torch::kChar",
+    DataType.s32: "torch::kI32",
+    DataType.e4m3: "torch::kFloat8_e4m3fn",
+    DataType.bf16: "torch::kBFloat16"
 }
 
 _PYTORCH_GEMM_IMPL_TEMPLATE_2x = (
